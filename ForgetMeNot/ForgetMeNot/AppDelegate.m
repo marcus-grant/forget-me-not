@@ -17,6 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    //Setup Core Data with singleton for context, with CoreDataStack instance
+    CoreDataStack *dataStore = [CoreDataStack setupDataStore];
+    NSManagedObjectContext *context = [dataStore setupManagedObjectContext];
     return YES;
 }
 

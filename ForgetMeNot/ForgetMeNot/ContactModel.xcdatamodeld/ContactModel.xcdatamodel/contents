@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Xcode 7.0">
+    <entity name="FMNCommunique" representedClassName="FMNCommunique" syncable="YES">
+        <attribute name="contents" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateTimeOf" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" attributeType="String" indexed="YES" syncable="YES"/>
+    </entity>
+    <entity name="FMNContact" representedClassName="FMNContact" syncable="YES">
+        <attribute name="activityScore" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <attribute name="birthday" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="eMail" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="firstName" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="reminderDate" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="uID" attributeType="Integer 32" defaultValueString="0" indexed="YES" syncable="YES"/>
+        <relationship name="communiques" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="FMNCommunique" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FMNCommunique" positionX="-18" positionY="90" width="128" height="105"/>
+        <element name="FMNContact" positionX="-306" positionY="0" width="126" height="180"/>
+    </elements>
+</model>
