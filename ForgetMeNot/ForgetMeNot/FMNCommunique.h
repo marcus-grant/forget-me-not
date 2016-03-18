@@ -1,9 +1,9 @@
 //
 //  FMNCommunique.h
-//  
+//  ForgetMeNot
 //
-//  Created by Marcus Grant on 3/3/16.
-//
+//  Created by Marcus Grant on 3/17/16.
+//  Copyright © 2016 Marcus Grant. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

@@ -2,7 +2,7 @@
 //  FMNCommunique+CoreDataProperties.m
 //  ForgetMeNot
 //
-//  Created by Marcus Grant on 3/14/16.
+//  Created by Marcus Grant on 3/17/16.
 //  Copyright © 2016 Marcus Grant. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu

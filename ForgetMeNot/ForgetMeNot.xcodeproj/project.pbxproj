@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2CAD77941C97C18D0036A82A /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD77931C97C18D0036A82A /* CoreDataStack.m */; };
+		2CAD779D1C9B84C60036A82A /* FMNContact+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD77961C9B84C60036A82A /* FMNContact+CoreDataProperties.m */; };
+		2CAD779E1C9B84C60036A82A /* FMNContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD77981C9B84C60036A82A /* FMNContact.m */; };
+		2CAD779F1C9B84C60036A82A /* FMNCommunique+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD779A1C9B84C60036A82A /* FMNCommunique+CoreDataProperties.m */; };
+		2CAD77A01C9B84C60036A82A /* FMNCommunique.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAD779C1C9B84C60036A82A /* FMNCommunique.m */; };
 		2CEBA1271C80394F00BEA0D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEBA1261C80394F00BEA0D5 /* main.m */; };
 		2CEBA12A1C80394F00BEA0D5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEBA1291C80394F00BEA0D5 /* AppDelegate.m */; };
 		2CEBA12D1C80394F00BEA0D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEBA12C1C80394F00BEA0D5 /* ViewController.m */; };
@@ -17,8 +21,6 @@
 		2CEBA1401C80394F00BEA0D5 /* ForgetMeNotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEBA13F1C80394F00BEA0D5 /* ForgetMeNotTests.m */; };
 		2CEBA14B1C80394F00BEA0D5 /* ForgetMeNotUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEBA14A1C80394F00BEA0D5 /* ForgetMeNotUITests.m */; };
 		2CEBA15E1C89493C00BEA0D5 /* ContactModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CEBA15C1C89493C00BEA0D5 /* ContactModel.xcdatamodeld */; };
-		2CEBA16F1C8DE05800BEA0D5 /* FMNContact+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEBA16C1C8DE05800BEA0D5 /* FMNContact+CoreDataProperties.m */; };
-		2CEBA1701C8DE05800BEA0D5 /* FMNCommunique+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CEBA16E1C8DE05800BEA0D5 /* FMNCommunique+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +43,14 @@
 /* Begin PBXFileReference section */
 		2CAD77921C97C18D0036A82A /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
 		2CAD77931C97C18D0036A82A /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		2CAD77951C9B84C60036A82A /* FMNContact+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMNContact+CoreDataProperties.h"; sourceTree = "<group>"; };
+		2CAD77961C9B84C60036A82A /* FMNContact+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMNContact+CoreDataProperties.m"; sourceTree = "<group>"; };
+		2CAD77971C9B84C60036A82A /* FMNContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMNContact.h; sourceTree = "<group>"; };
+		2CAD77981C9B84C60036A82A /* FMNContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMNContact.m; sourceTree = "<group>"; };
+		2CAD77991C9B84C60036A82A /* FMNCommunique+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMNCommunique+CoreDataProperties.h"; sourceTree = "<group>"; };
+		2CAD779A1C9B84C60036A82A /* FMNCommunique+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMNCommunique+CoreDataProperties.m"; sourceTree = "<group>"; };
+		2CAD779B1C9B84C60036A82A /* FMNCommunique.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMNCommunique.h; sourceTree = "<group>"; };
+		2CAD779C1C9B84C60036A82A /* FMNCommunique.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMNCommunique.m; sourceTree = "<group>"; };
 		2CEBA1221C80394F00BEA0D5 /* ForgetMeNot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForgetMeNot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CEBA1261C80394F00BEA0D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2CEBA1281C80394F00BEA0D5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,10 +68,6 @@
 		2CEBA14A1C80394F00BEA0D5 /* ForgetMeNotUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForgetMeNotUITests.m; sourceTree = "<group>"; };
 		2CEBA14C1C80394F00BEA0D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CEBA15D1C89493C00BEA0D5 /* ContactModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContactModel.xcdatamodel; sourceTree = "<group>"; };
-		2CEBA16B1C8DE05800BEA0D5 /* FMNContact+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMNContact+CoreDataProperties.h"; sourceTree = "<group>"; };
-		2CEBA16C1C8DE05800BEA0D5 /* FMNContact+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMNContact+CoreDataProperties.m"; sourceTree = "<group>"; };
-		2CEBA16D1C8DE05800BEA0D5 /* FMNCommunique+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMNCommunique+CoreDataProperties.h"; sourceTree = "<group>"; };
-		2CEBA16E1C8DE05800BEA0D5 /* FMNCommunique+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMNCommunique+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,10 +158,14 @@
 		2CEBA1581C80398900BEA0D5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2CEBA16B1C8DE05800BEA0D5 /* FMNContact+CoreDataProperties.h */,
-				2CEBA16C1C8DE05800BEA0D5 /* FMNContact+CoreDataProperties.m */,
-				2CEBA16D1C8DE05800BEA0D5 /* FMNCommunique+CoreDataProperties.h */,
-				2CEBA16E1C8DE05800BEA0D5 /* FMNCommunique+CoreDataProperties.m */,
+				2CAD77981C9B84C60036A82A /* FMNContact.m */,
+				2CAD77971C9B84C60036A82A /* FMNContact.h */,
+				2CAD779B1C9B84C60036A82A /* FMNCommunique.h */,
+				2CAD779C1C9B84C60036A82A /* FMNCommunique.m */,
+				2CAD77951C9B84C60036A82A /* FMNContact+CoreDataProperties.h */,
+				2CAD77961C9B84C60036A82A /* FMNContact+CoreDataProperties.m */,
+				2CAD77991C9B84C60036A82A /* FMNCommunique+CoreDataProperties.h */,
+				2CAD779A1C9B84C60036A82A /* FMNCommunique+CoreDataProperties.m */,
 				2CEBA15C1C89493C00BEA0D5 /* ContactModel.xcdatamodeld */,
 			);
 			name = Models;
@@ -312,12 +322,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CAD779E1C9B84C60036A82A /* FMNContact.m in Sources */,
 				2CAD77941C97C18D0036A82A /* CoreDataStack.m in Sources */,
 				2CEBA12D1C80394F00BEA0D5 /* ViewController.m in Sources */,
 				2CEBA12A1C80394F00BEA0D5 /* AppDelegate.m in Sources */,
-				2CEBA1701C8DE05800BEA0D5 /* FMNCommunique+CoreDataProperties.m in Sources */,
-				2CEBA16F1C8DE05800BEA0D5 /* FMNContact+CoreDataProperties.m in Sources */,
+				2CAD779F1C9B84C60036A82A /* FMNCommunique+CoreDataProperties.m in Sources */,
 				2CEBA15E1C89493C00BEA0D5 /* ContactModel.xcdatamodeld in Sources */,
+				2CAD779D1C9B84C60036A82A /* FMNContact+CoreDataProperties.m in Sources */,
+				2CAD77A01C9B84C60036A82A /* FMNCommunique.m in Sources */,
 				2CEBA1271C80394F00BEA0D5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
