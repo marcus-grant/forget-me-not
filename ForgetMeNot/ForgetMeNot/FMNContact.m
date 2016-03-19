@@ -45,6 +45,7 @@
     newContact.uID          = [FMNContact getValidatedIDWith:uID
                                           fromManagedContext:context];//TODO: implement
     newContact.communiques  = communiques;//TODO: assumed validate by communique inits
+#warning remove this after testing git branch update
 
 
 
