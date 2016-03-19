@@ -95,6 +95,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CAD77A21C9C96A40036A82A /* Core Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				2CAD77981C9B84C60036A82A /* FMNContact.m */,
+				2CAD77971C9B84C60036A82A /* FMNContact.h */,
+				2CAD779B1C9B84C60036A82A /* FMNCommunique.h */,
+				2CAD779C1C9B84C60036A82A /* FMNCommunique.m */,
+				2CAD77951C9B84C60036A82A /* FMNContact+CoreDataProperties.h */,
+				2CAD77961C9B84C60036A82A /* FMNContact+CoreDataProperties.m */,
+				2CAD77991C9B84C60036A82A /* FMNCommunique+CoreDataProperties.h */,
+				2CAD779A1C9B84C60036A82A /* FMNCommunique+CoreDataProperties.m */,
+				2CEBA15C1C89493C00BEA0D5 /* ContactModel.xcdatamodeld */,
+			);
+			name = "Core Data Models";
+			sourceTree = "<group>";
+		};
 		2CEBA1191C80394F00BEA0D5 = {
 			isa = PBXGroup;
 			children = (
@@ -158,15 +174,7 @@
 		2CEBA1581C80398900BEA0D5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2CAD77981C9B84C60036A82A /* FMNContact.m */,
-				2CAD77971C9B84C60036A82A /* FMNContact.h */,
-				2CAD779B1C9B84C60036A82A /* FMNCommunique.h */,
-				2CAD779C1C9B84C60036A82A /* FMNCommunique.m */,
-				2CAD77951C9B84C60036A82A /* FMNContact+CoreDataProperties.h */,
-				2CAD77961C9B84C60036A82A /* FMNContact+CoreDataProperties.m */,
-				2CAD77991C9B84C60036A82A /* FMNCommunique+CoreDataProperties.h */,
-				2CAD779A1C9B84C60036A82A /* FMNCommunique+CoreDataProperties.m */,
-				2CEBA15C1C89493C00BEA0D5 /* ContactModel.xcdatamodeld */,
+				2CAD77A21C9C96A40036A82A /* Core Data Models */,
 			);
 			name = Models;
 			sourceTree = "<group>";

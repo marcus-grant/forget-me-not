@@ -2,7 +2,7 @@
 //  FMNCommunique+CoreDataProperties.h
 //  ForgetMeNot
 //
-//  Created by Marcus Grant on 3/17/16.
+//  Created by Marcus Grant on 3/18/16.
 //  Copyright © 2016 Marcus Grant. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSDate *dateTimeOf;
 @property (nullable, nonatomic, retain) NSNumber *duration;
 @property (nullable, nonatomic, retain) NSString *type;
+@property (nullable, nonatomic, retain) FMNContact *contact;
 
 @end
 

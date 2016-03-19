@@ -4,6 +4,7 @@
 //
 //  Created by Marcus Grant on 3/15/16.
 //  Copyright © 2016 Marcus Grant. All rights reserved.
+//  Ported from MyContacts project
 //
 
 #import "CoreDataStack.h"

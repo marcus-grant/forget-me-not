@@ -2,7 +2,7 @@
 //  FMNContact+CoreDataProperties.m
 //  ForgetMeNot
 //
-//  Created by Marcus Grant on 3/17/16.
+//  Created by Marcus Grant on 3/18/16.
 //  Copyright © 2016 Marcus Grant. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -19,7 +19,6 @@
 @dynamic firstName;
 @dynamic lastName;
 @dynamic phoneNumber;
-@dynamic reminderDate;
 @dynamic uID;
 @dynamic communiques;
 
