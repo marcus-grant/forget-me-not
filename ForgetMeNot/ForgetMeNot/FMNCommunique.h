@@ -8,12 +8,22 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
+#import "FMNContact.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FMNCommunique : NSManagedObject
 
 // Insert code here to declare functionality of your managed object subclass
+
++(instancetype)initWithContext:(NSManagedObjectContext *)context
+                      contents:(NSString *)contents
+                    dateTimeOf:(NSDate *)dateTimeOf
+                          type:(NSString *)type
+                      duration:(NSNumber *)duration
+                       contact:(id)contact;
+
+
 
 @end
 

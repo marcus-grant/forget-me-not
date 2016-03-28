@@ -42,14 +42,11 @@
     newContact.eMail        = [FMNContact getValidatedEMailWith:eMail];
     newContact.birthday     = birthday;
     newContact.activityScore = activityScore;
-    newContact.uID          = [FMNContact getValidatedIDWith:uID
-                                          fromManagedContext:context];//TODO: implement
+    newContact.uID          = uID;//TODO: Make sure uids are validated for collisions
+    //TODO: implement
     newContact.communiques  = communiques;//TODO: assumed validate by communique inits
-#warning remove this after testing git branch update
 
-
-
-
+    return [newContact copy];
 }
 
 //TODO: Add implementations for different types for entering phone numbers
@@ -95,13 +92,18 @@
 +(NSArray *)getValidatedPhoneNumberWith:(id)phoneNumber
 {
     // validate that the given reference is an array of strings using helper func
-#warning this needs implementation and comments
+    //TODO: Add validation functions with regex at somepoint
+    return [FMNContact getValidatedArrayOfStringFrom:phoneNumber];
 }
 
 +(NSArray *)getValidatedEMailWith:(id)eMail
 {
     // validate that the given reference is an array of strings using helper func
-#warning still needs comments and implementation
+    NSArray *validatedEMail = [FMNContact getValidatedArrayOfStringFrom:eMail];
+    return validatedEMail;
+
+
+
 }
 //Generic Helper func for validating array of string properties
 +(NSArray *)getValidatedArrayOfStringFrom:(id)unkownReference
@@ -210,10 +212,45 @@
     //TODO: add whitespace trimming func
 
     return emailString;
-    
-    
-    
 }
+
+//TODO: Make sure uID collisions are validated at some point
++(NSInteger *)getValidatedUID:(NSNumber *)uID
+           fromManagedContext:(NSManagedObjectContext *)context
+{
+    NSFetchRequest *uIDFetchRequest = [NSFetchRequest
+                                       fetchRequestWithEntityName:@"FMNContact"];
+    uIDFetchRequest.predicate = [NSPredicate predicateWithFormat:@"uID > %@", uID];
+    NSFetchRequest *maxUIDRequest = [[NSFetchRequest alloc]
+                                     initWithEntityName:@"FMNContact"];
+    maxUIDRequest.fetchLimit = 1;
+    maxUIDRequest.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"uID"
+                                                                    ascending:NO]];
+
+    NSError *error = nil;
+
+    FMNContact *highestUIDContact = [context executeFetchRequest:maxUIDRequest
+                                                          error:&error].firstObject;
+    //if this is the highest uID within the context, simply return this uID to be used
+    if (!highestUIDContact)
+    {
+        return (NSInteger *)[uID integerValue];
+    }
+    //otherwise, take the max uID and simply increment it
+    NSNumber *highestUID = highestUIDContact.uID;
+    return (NSInteger *)[highestUID integerValue]+1;
+}
+
+//TODO: Temporary helper func. In future custom regex and trimming funcs will be made to suit the specific property types' requirements
++(NSString *)trimWhiteSpaceFrom:(NSString *)inputString
+{
+    NSCharacterSet *whiteSpaceSet;
+    whiteSpaceSet = [NSCharacterSet characterSetWithCharactersInString:@" "];
+    return [inputString stringByTrimmingCharactersInSet:whiteSpaceSet];
+
+}
+
+#pragma mark - fetch functions
 
 #pragma mark - Error Returns
 

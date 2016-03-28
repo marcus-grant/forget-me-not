@@ -14,6 +14,8 @@
 //TODO: Add helper function to properly format phone number string
 //TODO: Add helper function to return a phone number string with regional formatting
 //TODO: Add function that can evaluate the validity of numbers in a phonenum by region
+//TODO: Add validation options to getValidatedPhoneNUmberWith:(id)
+//                              & getValidatedEmailWith:(id)
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
@@ -39,6 +41,8 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Helper Functions
 +(NSString *)convertToPhoneNumberString:(id) phoneNum;
 +(NSString *)formatPhoneString:(NSString *) phoneString;
++(NSString *)getValidatedPhoneNumberWith:(id)phoneNumber;
++(NSString *)getValidatedEMailWith:(id)eMail;
 
 
 
