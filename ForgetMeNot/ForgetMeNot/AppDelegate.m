@@ -21,7 +21,9 @@
     // Setup Core Data with singleton for managed object context, using an --
     //    instance of CoreDataStack, "dataStore"
     CoreDataStack *dataStore = [CoreDataStack setupDataStore];
-    NSManagedObjectContext *context = [dataStore setupManagedObjectContext];
+    NSManagedObjectContext *moc = [dataStore setupManagedObjectContext];
+    NSLog(@"The Managed Object Context has been initialized from the dataStore");
+
     return YES;
 }
 
